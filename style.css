@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.cnode {
+    --w: 10px;
+    border-radius: calc(var(--w) / 2);
+    border: 3px solid orangered;
+    width: var(--w);
+    height: var(--w);
+    position: absolute;
+    transform: translate(calc(-1 * var(--w) / 2), calc(-1 * var(--w) / 2));
+    background-color: azure;
+}
